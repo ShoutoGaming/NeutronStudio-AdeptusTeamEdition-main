@@ -1,0 +1,193 @@
+.home-main {
+  display: flex;
+}
+
+.sidebar {
+  height: calc(100vh - 25px);
+  background-color: rgba(0, 0, 0, 0.381);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  min-width: 44px;
+  max-width: 44px;
+}
+.sidebarIcon {
+  opacity: 0.6;
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #ffffff80;
+  border-radius: 5px;
+}
+.sidebarProfile {
+  padding: 30px 30px 0 0;
+  border-radius: 20%;
+  background: #00000080;
+  background-image: url("../media/member_placeholder.webp");
+  background-size: cover;
+  background-repeat: none;
+  image-rendering: pixelated;
+}
+
+.sidebarIcon:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 0 32px #00000090;
+}
+
+.sidebarProfile:hover::after {
+  transform: scale(1.1);
+}
+
+.home-container {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  min-width: calc(100% - 74px);
+  justify-content: space-between;
+  overflow: auto;
+  & h1 {
+    margin: 0;
+    font-family: "Satoshi-Black", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+  }
+}
+.home-work-container {
+  padding: 10px;
+  box-sizing: border-box;
+  min-width: calc(100% - 274px);
+  height: calc(100vh - 25px);
+  overflow: auto;
+}
+.sidebar-workspace {
+  height: calc(100vh - 25px);
+  background-color: rgba(0, 0, 0, 0.381);
+  min-width: 230px;
+  max-width: 230px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.modules-list {
+  display: grid;
+  gap: 10px;
+  min-width: 270px;
+}
+.module-container {
+  background-color: rgba(0, 0, 0, 0.089);
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.186);
+  }
+}
+.news-container {
+  background-color: rgba(0, 0, 0, 0.089);
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  min-width: calc(100% - 290px);
+  transition: all 0.2s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.186);
+  }
+}
+
+.module-option {
+  background-color: rgba(0, 0, 0, 0.089);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.186);
+  }
+  &:active {
+    transform: scale(0.95);
+    background-color: rgba(101, 18, 146, 0.186);
+  }
+}
+.module-option-list {
+  display: grid;
+  gap: 10px;
+  overflow: auto;
+  max-height: 60vh;
+}
+
+.module-text {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  & img {
+    max-width: 30px;
+    height: 30px;
+    border-radius: 2px;
+  }
+  & span {
+    font-family: "Satoshi-Light";
+  }
+  & p {
+    font-family: "Minecraft";
+  }
+}
+.settings-container {
+  padding: 0px 10px 0px 10px;
+  box-sizing: border-box;
+  min-width: calc(100% - 74px);
+}
+.h1-1 {
+  font-family: "Satoshi-Light", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  color: #ffffff80;
+  font-size: medium;
+}
+
+.SlideBarApps {
+  width: 100%;
+  margin: 0 auto;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.242);
+  border-radius: 10px;
+  overflow-x: auto;
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  align-items: center;
+  overflow-y: hidden;
+}
+.ApptoSlideBar {
+  width: 150px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.207);
+  border-radius: 5px;
+  display: grid;
+  gap: 5px;
+  & img {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+  }
+  & button {
+    height: 20px;
+    color: aliceblue;
+    background-color: rgb(100, 41, 108);
+    border: none;
+    width: 140px;
+    margin: auto;
+    font-family: "Satoshi-Regular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 2px;
+  }
+}

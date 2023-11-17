@@ -1,0 +1,68 @@
+/**
+ * @see https://www.electron.build/configuration/configuration
+ */
+{
+  appId: "com.github.adeptusteam.neutronstudio-adeptusteamedition",
+  asar: true,
+  directories: {
+    output: "release/${version}",
+  },
+  files: ["dist-electron", "dist"],
+  mac: {
+    artifactName: "${productName}_${version}.${ext}",
+    icon: "./build/icon.icns",
+    target: ["dmg", "zip"],
+  },
+  win: {
+    icon: "./build/icon.ico",
+    target: [
+      {
+        target: "nsis",
+        arch: ["x64", "ia32"],
+      },
+    ],
+    artifactName: "${productName}_${version}.${ext}",
+  },
+  linux: {
+    icon: "./build/icon.png",
+
+    target: [
+      {
+        target: "AppImage",
+        arch: ["x64"],
+      },
+      {
+        target: "tar.gz",
+        arch: ["x64"],
+      },
+      {
+        target: "deb",
+        arch: ["x64"],
+      },
+      {
+        target: "rpm",
+        arch: ["x64"],
+      },
+      {
+        target: "AppImage",
+        arch: ["armv7l"],
+      },
+      {
+        target: "tar.gz",
+        arch: ["armv7l"],
+      },
+    ],
+  },
+  nsis: {
+    oneClick: false,
+    perMachine: false,
+    allowToChangeInstallationDirectory: true,
+    deleteAppDataOnUninstall: false,
+    installerLanguages: ["es"],
+  },
+  publish: {
+    "provider": "generic",
+    "channel": "latest",
+    "url": "https://github.com/AdeptusTeam/NeutronStudio-AdeptusTeamEdition/releases/latest/download/"
+  },
+}

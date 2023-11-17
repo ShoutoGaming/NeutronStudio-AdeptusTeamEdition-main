@@ -1,0 +1,86 @@
+/* Home.css */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+
+.bar {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25px; 
+  background-color: #1a1a1b5e;
+  display: flex;
+  -webkit-app-region: drag;
+  justify-content: space-between;
+  & span {
+    font-family: "Satoshi-Regular";
+  }
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.minimize {
+  color: #FFF;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Segoe MDL2 Assets";
+  z-index: 5;
+  -webkit-app-region: no-drag;
+  background-color: #ffffff00;
+  transition-duration: 0.5s;
+}
+.update {
+  font-family: "Segoe MDL2 Assets";
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  -webkit-app-region: no-drag;
+  transition-duration: 0.5s;
+  background-color: #ffffff00;
+}
+
+
+.close {
+  color: #FFF;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Segoe MDL2 Assets";
+  z-index: 5;
+  -webkit-app-region: no-drag;
+  transition-duration: 0.5s;
+  background-color: #ffffff00;
+}
+.minimize:hover {
+  color: #ffffff;
+}
+
+.close:hover{
+  color: #c22525;
+}
+.update:hover {
+  color: #e8ca24;
+}
