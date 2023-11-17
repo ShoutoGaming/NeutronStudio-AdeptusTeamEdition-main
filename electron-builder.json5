@@ -63,6 +63,6 @@
   publish: {
     "provider": "generic",
     "channel": "latest",
-    "url": "https://github.com/AdeptusTeam/NeutronStudio-AdeptusTeamEdition/releases/latest/download/"
+    "url": "https://github.com/ShoutoGaming/NeutronStudio-AdeptusTeamEdition-main/releases/download/1.0.0/"
   },
 }

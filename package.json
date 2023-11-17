@@ -1,5 +1,5 @@
 {
-  "name": "NeutronStudio AdeptusTeamEdition",
+  "name": "NeutronStudio-AdeptusTeamEdition",
   "productName": "NeutronStudio-AdeptusTeamEdition",
   "version": "1.0.0",
   "main": "dist-electron/main/index.js",
